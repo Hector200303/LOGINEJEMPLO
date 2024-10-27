@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1073922159555",
+    "project_id": "loginejemplo-76d35",
+    "storage_bucket": "loginejemplo-76d35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073922159555:android:710894a293d1cf5db38376",
+        "android_client_info": {
+          "package_name": "com.example.loginejemplo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoErlrKyIXS1TroGPW__RKvqdYdmJ8oWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

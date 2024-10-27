@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    tools:context=".CrearCuentaActivity">
+
+    <!-- Título de Crear Cuenta Nueva -->
+
+    <!-- EditText para Nombre de Usuario -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text="Crear Cuenta Nueva"
+        android:textAlignment="center"
+        android:textColor="#092BE7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edtNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59" />
+
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Nombre de Usuario"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="#212529"
+        android:textColorHint="#6C757D"
+        app:layout_constraintBottom_toTopOf="@+id/edtEmailNuevo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <!-- EditText para Email -->
+    <EditText
+        android:id="@+id/edtEmailNuevo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#212529"
+        android:textColorHint="#6C757D"
+        app:layout_constraintBottom_toTopOf="@+id/edtPasswordNuevo1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <!-- EditText para Contraseña -->
+    <EditText
+        android:id="@+id/edtPasswordNuevo1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#212529"
+        android:textColorHint="#6C757D"
+        app:layout_constraintBottom_toTopOf="@+id/edtPasswordnuevo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <!-- EditText para Confirmar Contraseña -->
+
+    <!-- Botón Crear Cuenta -->
+
+    <EditText
+        android:id="@+id/edtPasswordnuevo2"
+        android:layout_width="320dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="352dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Confirmar Contraseña"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#212529"
+        android:textColorHint="#6C757D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCrearCuentaNueva"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#0C2CDE"
+        android:text="Crear Cuenta"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordnuevo2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
